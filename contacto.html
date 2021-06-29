@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contacto</title>
+</head>
+<body class="body">
+	<!--inicio de header-->
+	<header class="estatico">
+		<ul>
+			<li><a href="../root/inicio.html">Inicio</a></li>
+			<li><a href="../root/productos1.html">Productos</a></li>
+			<li><a href="../root/contacto.html">Contacto</a></li>
+			<li><a href="../root/clientes.html">Clientes</a></li>
+			<li><a href="../root/entrega.html">Puntos de Entrega</a></li>
+		</ul>
+	</header>
+	
+	<form action="enviar.php" method="POST" enctype="multipart/form-data">
+			<fieldset>
+				<legend>Envianos tus datos y te contactamos:</legend>
+			<label>Nombre y Apellido</label>
+			<input type="text" name="nombreyapellido" maxlength="100">
+			<br>
+			<label>Numero Telefonico</label>
+			<input type="text" name="telefono">
+			<br>
+			<textarea>comentanos con que podemos ayudarte</textarea>
+			<br>
+			
+			<select name="productos">
+				<option value="mochila">Mochila</option>
+				<option value="Fundas">Fundas</option>
+				<option value="morral">Morral</option>
+				<option value="conFuelle">Con Fuelle</option>
+				<option value="conElastico">Con Elastico</option>
+			</select>
+			<br>
+			<br>
+			<br>
+
+			<input type="submit" name="submit"
+			value="Enviar">
+			<input type="reset" name="submit"
+			value="Limpiar">
+			</fieldset>
+		</form>
+</body>
+</html>
